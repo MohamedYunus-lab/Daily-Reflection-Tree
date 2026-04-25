@@ -1,10 +1,22 @@
-# Daily Reflection Tree - DeepThought Assignment
+# 🌳 Daily Reflection Tree
 
-## Overview
+> A deterministic reflection tool for structured end-of-day self-awareness
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![DeepThought](https://img.shields.io/badge/DeepThought-Fellowship-orange.svg)](https://github.com/DT-CultureTech)
+
+## 🎯 Overview
+
 A deterministic reflection tool that guides employees through structured end-of-day reflection across three psychological axes:
-- **Axis 1: Locus** (Victim vs Victor)
-- **Axis 2: Orientation** (Contribution vs Entitlement)
-- **Axis 3: Radius** (Self-Centrism vs Altrocentrism)
+
+### The Three Axes
+
+| Axis | Spectrum | Psychology |
+|------|----------|------------|
+| 🧠 **Locus** | Victim ↔ Victor | Rotter (1954), Dweck (2006) |
+| 💡 **Orientation** | Entitlement ↔ Contribution | Campbell (2004), Organ (1988) |
+| 🌍 **Radius** | Self-centric ↔ Altrocentric | Maslow (1969), Batson (2011) |
 
 ## Structure
 ```
@@ -20,40 +32,41 @@ A deterministic reflection tool that guides employees through structured end-of-
 write-up.md                     - Design rationale and psychology sources
 ```
 
-## How to Run the Agent (Part B)
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8 or higher
 
-### Installation
-```bash
-pip install -r agent/requirements.txt
-```
+### Installation & Run
 
-### Run the Reflection Session
 ```bash
+# Clone the repository
+git clone https://github.com/MohamedYunus-lab/Daily-Reflection-Tree.git
+
+# Navigate to the project
+cd Daily-Reflection-Tree
+
+# Run the agent
 python agent/reflection_agent.py
 ```
 
-The agent will:
-1. Load the tree from `tree/reflection-tree.json`
-2. Walk you through the reflection questions
-3. Branch based on your answers (deterministically)
-4. Provide personalized reflections
-5. Generate a summary of your session
+The agent will guide you through reflection questions and provide personalized insights based on your responses.
 
-## Design Principles
-- **No LLM at runtime** - Fully deterministic
-- **Fixed options only** - No free text input
-- **Psychologically grounded** - Based on research (Rotter, Dweck, Maslow, etc.)
-- **Non-judgmental** - Guides reflection without moralizing
-- **Sequential flow** - Each axis builds on the previous
+## 📊 Tree Statistics
 
-## Tree Statistics
-- **Total nodes**: 41
-- **Question nodes**: 14 (with fixed options)
-- **Decision nodes**: 14 (internal routing)
-- **Reflection nodes**: 8 (insights/reframes)
-- **Bridge nodes**: 2 (axis transitions)
-- **Start/End nodes**: 2
-- **Summary node**: 1
+| Metric | Count |
+|--------|-------|
+| **Total Nodes** | 41 |
+| **Question Nodes** | 14 |
+| **Decision Nodes** | 14 |
+| **Reflection Nodes** | 8 |
+| **Bridge Nodes** | 2 |
+| **Summary Templates** | 18 |
+
+## ✨ Key Features
+
+- ✅ **No LLM at runtime** - Fully deterministic and predictable
+- ✅ **Fixed options only** - No free text input
+- ✅ **Psychologically grounded** - Based on 6 research papers
+- ✅ **Non-judgmental** - Guides reflection without moralizing
+- ✅ **Sequential flow** - Each axis builds on the previous
